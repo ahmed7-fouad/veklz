@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize file -->
+    <link rel="stylesheet" href="css/normallize.css">
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- main style file -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <title>Veklz</title>
+</head>
+<body>
+
+
+    <!-- start aside section -->
+   <aside>
+        <section class="logo">
+            
+            <img src="images/logo.svg" alt="">
+            <span>Motiv.</span>
+        </section>
+        <ul id="aside_links">
+            <li class  id="dashboard">
+                <section class="dashboard_icon">
+                <img src="images/dashboard icon.svg" alt="">
+                <img src="images/dashboard icon.svg" alt="">
+                <img src="images/dashboard icon.svg" alt="">
+                <img src="images/dashboard icon.svg" alt="">
+                </section>
+                <a href="index.html">dashboard</a>
+            </li>
+            <li id="assets">
+                <img src="images/assets.svg" alt="">
+                <a href="assets.html" >assets</a>
+            </li>
+            <li id="booking">
+                <img src="images/car_icon.svg" alt="">
+                <a href="booking.html">booking</a>
+            </li>
+            <li id="sell_cars">
+                <section class="sell_cars_icon">
+                    <img src="images/Shopping Bag/Shape-1.svg" alt="">
+                    <img src="images/Shopping Bag/Shape.svg" alt="">
+                    
+                </section>
+                <a href="sell.html">sell cars</a>
+            </li>
+            <li id="buy_cars">
+                <section class="buy_cars">
+                    <img src="images/Shopping Cart/Shape-1.svg" alt="">
+                    <img src="images/Shopping Cart/Shape.svg" alt="">
+                </section>
+                <a href="buy_cars.html">buy cars</a>
+            </li>
+            <li id="services">
+                <section class="services_icon">
+                    <img src="images/services/Shape-1.svg" alt="">
+                    <img src="images/services/Shape-2.svg" alt="">
+                    <img src="images/services/Shape-3.svg" alt="">
+                    <img src="images/services/Shape-4.svg" alt="">
+                </section>
+                <a href="services.html">services</a>
+            </li>
+            <li id="calender">
+            <section class="calender_icon">
+                <img src="images/Calendar/Shape.svg" alt="">
+                <img src="images/Calendar/calender_lines.svg" alt="">
+                <img src="images/Calendar/Shape-1.svg" alt="">
+            </section>
+            <a href="calender.html">calender</a>
+            </li>
+            <li id="message">
+                <section class="message_icon">
+                    <img src="images/message.svg" alt="">
+                </section>
+                <a href="message.html">message</a>
+            </li>
+        </ul>
+        <ul>
+            <li id="setting">
+                <section class="setting">
+                    <img src="images/Cog/Shape-1.svg" alt="">
+                    <img src="images/Cog/Shape.svg" alt="">
+                </section>
+                <a href="setting.html">setting</a>
+            </li>
+            <li id="log_out">
+                <section class="log_out">
+                    <img src="images/Sign Out/Shape.svg" alt="">
+                    <img src="images/Sign Out/Shape-1.svg" alt="">
+                </section>
+                <a href="#">log out</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- end aside section -->
+
+
+    <!-- start header section -->
+        <header>
+            <!-- start nav section -->
+                <nav>
+                    <section class="container">
+                        
+                        <img id="nav_bars"src="images/menu-bars-svgrepo-com.svg" style="width:22px;" alt="">
+                        <section class="search_bar">
+                            <img src="images/search_icon.svg" alt="">
+                            <input type="search" placeholder="Search or type">
+                        </section>
+                        <section class="nav_personal_info">
+                            <section class="notifications">
+                                <img src="images/notification_icon.svg" alt="">
+                            </section>
+                            <img src="images/portrait-handsome-european-male-student-has-gentle-smile-face-happy-hear-pleasant-news-stands-delighted-wears-round-spectacles-orange-jumper.png" alt="">
+                        </section>
+                    </section>
+                </nav>
+            <!-- end nav section -->
+
+        <!-- start booking section -->
+        <section class="booking">
+            <section class="container">
+                    <section class="booking_info">
+                        <h1>Booking</h1>
+                        <section class="booking_header_btns">
+                        <section class="booking_filtring_buttons">
+                            <section class="btn">
+                                <select name="version" id="">
+                                    <option value="New"> new</option>
+                                    <option value="usable"> useable</option>
+                                    <option value="old"> old</option>
+                                </select>
+                            <img src="images/bottom_arrow.svg" alt="">
+                            </section>
+                            <section  class="btn">
+                            <select id="category" name="Type" id="">
+                                    <option value="Toyota" data-type=".toyota">Toyota</option>
+                                    <option value="Audi" data-type="audi">Audi</option>
+                                    <option value="Merc" data-type="mercedes">Merc</option>
+                                    <option value="Dezire" data-type="dezire">Dezire</option>
+                                </select>
+                                <img src="images/bottom_arrow.svg" alt="">
+                            </section>
+                        </section>
+
+                        <section class="booking_another_buttons">
+                            <section class="btn">
+                                <section class="two_squares">
+                                <img src="images/dashboard icon.svg" alt="">
+                                <img src="images/dashboard icon.svg" alt="">
+                                </section> 
+                                <section class="two_squares">
+                                <img src="images/dashboard icon.svg" alt="">
+                                <img src="images/dashboard icon.svg" alt="">
+                                </section>
+                            </section>
+
+                            <section class="btn">
+                                <section class="shape1">
+                                <img src="images/booking_page_icons/header_icons/line1.svg" alt="">
+                                <img src="images/booking_page_icons/header_icons/Shape-1.svg" alt="">
+                                </section>
+                                <section class="shape2">
+                                <img src="images/booking_page_icons/header_icons/line2.svg" alt="">
+                                <img src="images/booking_page_icons/header_icons/Shape-1.svg" alt="">
+                                </section>
+                            </section>
+
+                        </section>
+                    </section>
+                </section>    
+            </section>
+        </section>
+        <!-- end booking section -->
+
+
+        <!-- start cars gallery section -->
+            <section class="cars_gallery">
+                <section class="container">
+
+                    <!-- box1 -->
+                    <section class="box audi ">
+
+                        <section class="car_description">
+                            <section class="car_type">
+                                <p>porshe 718 cayman s</p>
+                               <span class="heart_shape">
+                                <img src="images/booking_page_cars_icons/empty_heart_icon.svg" alt="prefered">
+                                <span class="fill" ></span>
+                                </span>
+                            </section>
+                            <p>Coupe</p>
+                        </section>
+
+                        <section class="car_img">
+                            <img src="images/booking_page_cars_images/car1.svg" alt="car1">
+                        </section>
+
+                        <section class="car_info_links">
+                            <section class="links">
+                                <section class="viewrs">
+                                    <img src="images/booking_page_cars_icons/person_icon.svg" alt="">
+                                    <span class="person">4</span>
+                                </section>
+
+                                <section class="manuel">
+                                        <img src="images/booking_page_cars_icons/manual_icon.svg" alt="">
+                                        <span>Manual</span>
+                                </section>
+                            </section>
+                            <section class="price">
+                                <p>$400<span>/d</span></p>
+                            </section>
+                        </section>
+                    </section>
+
+
+                    <!-- box 2 -->
+
+                       <section class="box mercedes">
+
+                        <section class="car_description">
+                            <section class="car_type">
+                                <p>porshe 718 cayman s</p>
+                               <span class="heart_shape">
+                                <img src="images/booking_page_cars_icons/empty_heart_icon.svg" alt="prefered">
+                                <span  class="fill" ></span>
+                                </span>
+                            </section>
+                            <p>Coupe</p>
+                        </section>
+
+                        <section class="car_img">
+                            <img src="images/booking_page_cars_images/car2.svg" alt="car1">
+                        </section>
+
+                        <section class="car_info_links">
+                            <section class="links">
+                                <section class="viewrs">
+                                    <img src="images/booking_page_cars_icons/person_icon.svg" alt="">
+                                    <span class="person">4</span>
+                                </section>
+
+                                <section class="manuel">
+                                        <img src="images/booking_page_cars_icons/manual_icon.svg" alt="">
+                                        <span>Manual</span>
+                                </section>
+                            </section>
+
+                            <section class="price">
+                                <p>$400<span>/d</span></p>
+                            </section>
+                        </section>
+                    </section>
+
+
+                    <!-- box3 -->
+                       <section class="box audi">
+
+                        <section class="car_description">
+                            <section class="car_type">
+                                <p>porshe 718 cayman s</p>
+                               <span class="heart_shape">
+                                <img src="images/booking_page_cars_icons/empty_heart_icon.svg" alt="prefered">
+                                <span class="fill" ></span>
+                                </span>
+                            </section>
+                            <p>Coupe</p>
+                        </section>
+
+                        <section class="car_img">
+                            <img src="images/booking_page_cars_images/car3.svg" alt="car1">
+                        </section>
+
+                        <section class="car_info_links">
+                            <section class="links">
+                                <section class="viewrs">
+                                    <img src="images/booking_page_cars_icons/person_icon.svg" alt="">
+                                    <span class="person">4</span>
+                                </section>
+
+                                <section class="manuel">
+                                        <img src="images/booking_page_cars_icons/manual_icon.svg" alt="">
+                                        <span>Manual</span>
+                                </section>
+                            </section>
+                            <section class="price">
+                                <p>$400<span>/d</span></p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!-- box4 -->
+
+
+                       <section class="box dezire">
+
+                        <section class="car_description">
+                            <section class="car_type">
+                                <p>porshe 718 cayman s</p>
+                               <span class="heart_shape">
+                                <img src="images/booking_page_cars_icons/empty_heart_icon.svg" alt="prefered">
+                                <span class="fill" ></span>
+                                </span>
+                            </section>
+                            <p>Coupe</p>
+                        </section>
+
+                        <section class="car_img">
+                            <img src="images/booking_page_cars_images/car4.svg" alt="car1">
+                        </section>
+
+                        <section class="car_info_links">
+                            <section class="links">
+                                <section class="viewrs">
+                                    <img src="images/booking_page_cars_icons/person_icon.svg" alt="">
+                                    <span class="person">4</span>
+                                </section>
+
+                                <section class="manuel">
+                                        <img src="images/booking_page_cars_icons/manual_icon.svg" alt="">
+                                        <span>Manual</span>
+                                </section>
+                            </section>
+                            <section class="price">
+                                <p>$400<span>/d</span></p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!-- box5 -->
+
+
+                       <section class="box dezire">
+
+                        <section class="car_description">
+                            <section class="car_type">
+                                <p>porshe 718 cayman s</p>
+                               <span class="heart_shape">
+                                <img src="images/booking_page_cars_icons/empty_heart_icon.svg" alt="prefered">
+                                <span class="fill" ></span>
+                                </span>
+                            </section>
+                            <p>Coupe</p>
+                        </section>
+
+                        <section class="car_img">
+                            <img src="images/booking_page_cars_images/car5.svg" alt="car1">
+                        </section>
+
+                        <section class="car_info_links">
+                            <section class="links">
+                                <section class="viewrs">
+                                    <img src="images/booking_page_cars_icons/person_icon.svg" alt="">
+                                    <span class="person">4</span>
+                                </section>
+
+                                <section class="manuel">
+                                        <img src="images/booking_page_cars_icons/manual_icon.svg" alt="">
+                                        <span>Manual</span>
+                                </section>
+                            </section>
+                            <section class="price">
+                                <p>$400<span>/d</span></p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!-- box6 -->
+
+                       <section class="box toyota">
+
+                        <section class="car_description">
+                            <section class="car_type">
+                                <p>porshe 718 cayman s</p>
+                               <span class="heart_shape">
+                                <img src="images/booking_page_cars_icons/empty_heart_icon.svg" alt="prefered">
+                                <span class="fill" ></span>
+                                </span>
+                            </section>
+                            <p>Coupe</p>
+                        </section>
+
+                        <section class="car_img">
+                            <img src="images/booking_page_cars_images/car6.svg" alt="car1">
+                        </section>
+
+                        <section class="car_info_links">
+                            <section class="links">
+                                <section class="viewrs">
+                                    <img src="images/booking_page_cars_icons/person_icon.svg" alt="">
+                                    <span class="person">4</span>
+                                </section>
+
+                                <section class="manuel">
+                                        <img src="images/booking_page_cars_icons/manual_icon.svg" alt="">
+                                        <span>Manual</span>
+                                </section>
+                            </section>
+                            <section class="price">
+                                <p>$400<span>/d</span></p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!-- box7 -->
+
+
+                       <section class="box audi">
+
+                        <section class="car_description">
+                            <section class="car_type">
+                                <p>porshe 718 cayman s</p>
+                               <span class="heart_shape">
+                                <img src="images/booking_page_cars_icons/empty_heart_icon.svg" alt="prefered">
+                                <span class="fill" ></span>
+                                </span>
+                            </section>
+                            <p>Coupe</p>
+                        </section>
+
+                        <section class="car_img">
+                            <img src="images/booking_page_cars_images/car1.svg" alt="car1">
+                        </section>
+
+                        <section class="car_info_links">
+                            <section class="links">
+                                <section class="viewrs">
+                                    <img src="images/booking_page_cars_icons/person_icon.svg" alt="">
+                                    <span class="person">4</span>
+                                </section>
+
+                                <section class="manuel">
+                                        <img src="images/booking_page_cars_icons/manual_icon.svg" alt="">
+                                        <span>Manual</span>
+                                </section>
+                            </section>
+                            <section class="price">
+                                <p>$400<span>/d</span></p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!-- box8 -->
+
+
+                       <section class="box mercedes">
+
+                        <section class="car_description">
+                            <section class="car_type">
+                                <p>porshe 718 cayman s</p>
+                               <span class="heart_shape">
+                                <img src="images/booking_page_cars_icons/empty_heart_icon.svg" alt="prefered">
+                                <span class="fill" ></span>
+                                </span>
+                            </section>
+                            <p>Coupe</p>
+                        </section>
+
+                        <section class="car_img">
+                            <img src="images/booking_page_cars_images/car2.svg" alt="car1">
+                        </section>
+
+                        <section class="car_info_links">
+                            <section class="links">
+                                <section class="viewrs">
+                                    <img src="images/booking_page_cars_icons/person_icon.svg" alt="">
+                                    <span class="person">4</span>
+                                </section>
+
+                                <section class="manuel">
+                                        <img src="images/booking_page_cars_icons/manual_icon.svg" alt="">
+                                        <span>Manual</span>
+                                </section>
+                            </section>
+                            <section class="price">
+                                <p>$400<span>/d</span></p>
+                            </section>
+                        </section>
+                    </section>
+
+                    <!-- box9 -->
+
+
+                       <section class="box audi">
+
+                        <section class="car_description">
+                            <section class="car_type">
+                                <p>porshe 718 cayman s</p>
+                               <span class="heart_shape">
+                                <img src="images/booking_page_cars_icons/empty_heart_icon.svg" alt="prefered">
+                                <span class="fill" ></span>
+                                </span>
+                            </section>
+                            <p>Coupe</p>
+                        </section>
+
+                        <section class="car_img">
+                            <img src="images/booking_page_cars_images/car3.svg" alt="car1">
+                        </section>
+
+                        <section class="car_info_links">
+                            <section class="links">
+                                <section class="viewrs">
+                                    <img src="images/booking_page_cars_icons/person_icon.svg" alt="">
+                                    <span class="person">4</span>
+                                </section>
+
+                                <section class="manuel">
+                                        <img src="images/booking_page_cars_icons/manual_icon.svg" alt="">
+                                        <span>Manual</span>
+                                </section>
+                            </section>
+                            <section class="price">
+                                <p>$400<span>/d</span></p>
+                            </section>
+                        </section>
+                    </section>
+
+
+                </section>
+            </section>
+        <!-- end cars gallery section -->
+    </header>
+    
+    
+    <script src="booking.js"></script>
+    <script src="activate_aside_links.js"></script>
+</body>
+</html>

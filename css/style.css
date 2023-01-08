@@ -1,0 +1,699 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+}
+.container{
+        padding-left:31px;
+        padding-right:31px;
+}
+
+
+
+/* start aside section */
+aside{
+    width:248px;
+    background-color: white;
+    position: sticky;
+    top:0;
+    height:100vh;
+    overflow: hidden;
+    padding:30px 24px;
+    display:inline-block;
+}
+@media(max-width:768px){
+    aside{
+        position:fixed;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+         margin-left:auto;
+        margin-right:auto;
+        z-index:1217;
+        visibility:hidden;
+    }
+    aside ul li{
+        flex-direction: column;
+        height:fit-content !important;
+        margin-bottom:4px !important;
+        align-items: center;
+    }
+    aside ul li a{
+        margin-top:7px;
+        margin-left:0 ;
+    }
+    aside ul:nth-of-type(2){
+        position:relative !important;
+    }
+}
+aside ul {
+    list-style-type:none;
+}
+
+aside .logo {
+    display:flex;
+    column-gap:12px;
+    align-items:center;
+    font-weight:700;
+    font-size:24px;
+    line-height:31.25px;
+    margin-bottom:35px;
+}
+aside ul li{
+    display:flex;
+    align-items:center;
+    border-radius:6px;
+    padding: 7px 8px;
+    margin-bottom:17px;
+    width: 174px;
+    height: 34px;
+    transition:0.2s linear background-color;
+    cursor:pointer;
+}
+aside ul li.active{
+    background: #F3F5F8;
+}
+aside ul li:hover {
+    background-color:#F3F5F8;
+}
+aside ul li section{
+    width:20px;
+    height:20px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+}
+aside .dashboard_icon{
+    display:flex;
+    gap:1.67px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+}
+
+aside a{
+    margin-left:9.67px;
+    text-decoration:none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5F6165;
+    text-transform:capitalize;
+}
+aside ul li:nth-child(4) .sell_cars_icon{
+    position: relative;
+    display:flex;
+    
+}
+aside ul li:nth-child(4) .sell_cars_icon img:first-child{
+    position: absolute;
+     top:-1px;
+  
+}
+aside ul li:nth-child(5) .buy_cars{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+aside ul li:nth-child(6) .services_icon img{
+position: absolute;
+}
+aside ul li:nth-child(6) .services_icon img:nth-child(1){
+bottom:1px;
+left:1px;
+}
+aside ul li:nth-child(6) .services_icon img:nth-child(3){
+right:1px;
+bottom:1px;
+}
+aside ul li:nth-child(7) .calender_icon img{
+position:absolute;
+}
+aside ul li:nth-child(7) .calender_icon img:nth-child(3){
+    top:0;
+    z-index:12;
+}
+aside ul:nth-of-type(2){
+    position: absolute;
+    bottom:0;
+}
+aside ul:nth-of-type(2) li:first-child .setting img{
+position: absolute;
+}
+aside ul:nth-of-type(2) li:nth-child(2) .log_out img{
+position: absolute;
+}
+aside ul:nth-of-type(2) li:nth-child(2) .log_out img:nth-child(2){
+left:-2px;
+}
+
+
+/* end aside section */
+
+/* start nav section */
+
+header{
+    display:inline-block;
+    width:calc(100% - 248px);
+    background: #F5F5F5;
+}
+#nav_bars{
+    display:none;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    header{
+        width:100%;
+    }
+        #nav_bars{
+            margin-right:19px;
+            display:block;
+        }
+        .nav_personal_info .notifications{
+            margin-left:19px !important;
+        }
+        aside{
+            top:0;
+        }
+}
+header nav{   
+background-color: white;
+margin-left:1px;
+position: relative;
+}
+
+header nav .container{
+     padding-top:15px;
+     padding-bottom:15px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.nav_personal_info{
+    display:flex;
+    align-items:center;
+}
+header nav .container .search_bar{
+width: 358px;
+height: 46px;
+background: #F5F4F6;
+border-radius: 8px;
+display:flex;
+align-items: center;
+padding: 12px 14px;
+gap:20px;
+position: relative;
+}
+header nav .container .search_bar input{
+    width:100%;
+    height:100%;
+    outline:none;
+    border:none;
+    background:transparent;
+    position:relative;
+}
+@media(max-width:992px){
+    header nav .container .search_bar input::placeholder{
+        font-size:14px;
+        word-spacing:-2px;
+    }
+}
+
+header nav .container .search_bar img{
+    width:20px;
+    height:20px;
+    outline:none;
+    border:none;
+    background:transparent;
+    position: relative;
+}
+.search_bar::before{
+    content:"";
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    background: #EF9011;
+    border-radius: 4px;
+    left:47px;
+}
+.nav_personal_info > img{
+    border-radius:50%;
+    margin-left:35px;
+    cursor:pointer;
+}
+.nav_personal_info .notifications{
+    position: relative;
+    cursor: pointer;
+    margin-left:17px;
+}
+.nav_personal_info .notifications::after{
+content:"";
+position: absolute;
+width: 9px;
+height: 9px;
+left: 10px;
+top: 2px;
+background: #FF5E6F;
+border-radius:50%;
+border: 1.5px solid #FFFFFF;
+}
+/* end nav section */
+
+/* start average section */
+
+.average .container {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(232px,1fr));
+padding-top:25px;
+padding-bottom:25px;
+gap:25px;
+}
+.average .container .box{
+    background-color:#FFFFFF;
+   padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.average .container .box .icon{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    margin-bottom:10px;
+}
+.average .container .box > p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #242731;
+    margin-bottom:35px;
+    white-space: nowrap;
+}
+.average .container .box .icon img:nth-child(2){
+    position: absolute;
+}
+.average .container .box:first-child{
+background: #A162F7;
+}
+.average .container .box:first-child .av_shape p{
+    color: #FFFFFF !important;
+}
+.average .container .box:first-child > p {
+color: #FFFFFF !important;
+}
+.average .container .box .av_shape{
+    position: relative;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.average .container .box .av_shape img:nth-child(1){
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+.average .container .box .av_shape p{
+        position:absolute;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        color: #242731;
+        margin-top:7px;
+}
+
+/* end average section */
+
+/* start charts section */
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+#chartdiv2 {
+  width: 100%;
+  height: 500px;
+}
+.charts{
+
+}
+.charts .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(235px,1fr));
+    gap:25px;
+}
+.charts .container .box{
+    background-color:#FFFFFF;
+    padding: 15px 25px;
+    border-radius:14px; 
+    cursor: pointer;  
+}
+
+.charts .container .box p{
+font-style: normal;
+font-size: 20px;
+line-height: 26px;
+color: #242731;
+}
+
+.charts .container .box p span{
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+color: #242731;
+}
+/* end charts section */
+
+/* start recommended cars  */
+.cars_recommended .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px , 1fr));
+    gap:25px;
+    padding-top:25px;
+    padding-bottom:25px;
+}
+.cars_recommended .container .box{
+    border-radius: 14px;
+    padding: 15px 27px;
+    cursor: pointer;
+}
+.cars_recommended .container .box .car_icons img{
+transition:0.3s opacity linear;
+}
+.cars_recommended .container .box .car_icons img:hover{
+    opacity:0.7;
+}
+.cars_recommended .container .box:first-child{
+    background: #E1DFA4;
+}
+.cars_recommended .container .box:nth-child(2){
+    background: #E3ECF1;
+}
+.cars_recommended .container .box:last-child{
+    background: #F4E3E5;
+}
+.cars_recommended .container .box .recommendation_average{
+    display:flex;
+    column-gap: 11.8px;
+    
+}
+.cars_recommended .container .box .recommendation_average span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #242731;
+}
+.cars_recommended .container .box .car_type > p{
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+color: #1F2128;
+margin-bottom:11.33px;
+}
+.cars_recommended .container .box .car_img{
+    padding:12px 0px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    
+}
+.cars_recommended .container .box .car_type .car_icons ul{
+list-style-type:none;
+display:flex;
+align-items: center;
+column-gap:17.33px;
+}
+.cars_recommended .container .box .car_type .car_icons{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+/* end recommended cars  */
+
+
+/* start booking section */
+.booking{
+
+}
+.booking .container h1{
+    font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+}
+.booking .container{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.booking_info{
+
+}
+.booking_header_btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking .container .booking_info .booking_filtring_buttons{
+display: flex;
+align-items: center;
+width:fit-content;
+gap:16px;
+}
+.booking .container .booking_info .booking_filtring_buttons .btn{
+padding: 10px 20px;
+width: 122px;
+height: 36px;
+background: #FFFFFF;
+border-radius: 22.5px;
+display:flex;
+align-items:center;
+justify-content: center;
+position:relative;
+cursor: pointer;
+}
+.booking .container .booking_info .booking_filtring_buttons .btn select{
+    width:100%;
+    outline:none;
+    border:none;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    z-index:323;
+}
+.booking .container .booking_info .booking_filtring_buttons .btn img{
+position: absolute;
+right:24.73px;
+top:50%;
+transform:translatey(-50%);
+}
+
+.booking_another_buttons{
+display: flex;
+align-items: center;
+gap:16px;
+}
+
+.booking_another_buttons .btn:nth-child(1){
+width:44px;
+height:44px;
+border-radius:50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-color: hsl(0, 0%, 100%);
+padding:10px;
+row-gap:1px;
+}
+
+.booking_another_buttons .btn:nth-child(1) .two_squares{
+display: flex;
+gap:1px;
+}
+.booking_another_buttons .btn{
+    cursor: pointer;
+}
+.booking_another_buttons .btn:nth-child(2){
+width:44px;
+height:44px;
+border-radius:50%;
+background-color: #A162F7;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap:3px;
+}
+.booking_another_buttons .btn:nth-child(2) .shape1,
+.booking_another_buttons .btn:nth-child(2) .shape2{
+    position: relative;
+    height:8px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.booking_another_buttons .btn:nth-child(2) .shape1 img:nth-child(2){
+    position: absolute;
+    top:50%;
+    transform: translatey(-50%);
+    left:3px;
+}
+.booking_another_buttons .btn:nth-child(2) .shape2 img:nth-child(2){
+position:absolute;
+top:50%;
+transform: translatey(-50%);
+right:3px;
+}
+/* end booking section */
+
+
+
+/* start cars gallery section */
+
+ .cars_gallery{
+
+}
+ .cars_gallery .container{
+padding-top:15px;
+padding-bottom:15px;
+display:grid;
+grid-template-columns: repeat(auto-fit,minmax(325px , 1fr));
+gap:25px;
+}
+
+ .cars_gallery .container .box{
+    padding:24px;
+    background-color:#FFFFFF;
+    border-radius: 16px;
+    
+}
+
+.cars_gallery .container .box .car_description .car_type .heart_shape img{
+    position: relative;
+    z-index: 232;
+    cursor: pointer;
+}
+
+.cars_gallery .container .box .car_description .car_type .heart_shape{
+    display: flex;
+    position:relative;
+}
+.cars_gallery .container .box .car_description .car_type .heart_shape .fill{
+position:absolute;
+bottom:2px;
+left:50%;
+width:10px;
+height:10px;
+background-color:red;
+transform:translatex(-50%) rotate(45deg);
+display: none;
+} 
+.cars_gallery .container .box .car_description .car_type .heart_shape .fill::before{
+    content:" ";
+    width:10px;
+    height:10px;
+    position: absolute;
+    background-color: red;
+    top:0px;
+    left:-6.3px;
+    border-bottom-left-radius:50%;
+    border-top-left-radius:50%;
+}
+.cars_gallery .container .box .car_description .car_type .heart_shape .fill::after{
+    content:" ";
+    width:10px;
+    height:10px;
+    position: absolute;
+    background-color: red;
+    top:-6.3px;
+    border-top-right-radius:50%;
+    border-top-left-radius:50%;
+
+}
+.cars_gallery .container .box .car_description .car_type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cars_gallery .container .box .car_description .car_type p{
+
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+color: #242731;
+text-transform:capitalize;
+
+}
+.cars_gallery .container .box .car_description > p{
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+color: #72767C;
+margin-top:4.5px;
+}
+ 
+.cars_gallery .container .box .car_img{
+    padding-top:22px;
+    padding-bottom:22px;
+    text-align: center;
+}
+
+.cars_gallery .container .box .car_info_links .links .viewrs,
+.cars_gallery .container .box .car_info_links .links .manuel{
+    
+display:flex;
+align-items:center;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #72767C;
+
+}
+.cars_gallery .container .box .car_info_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cars_gallery .container .box .car_info_links .links{
+    display: flex;
+    align-items: center;
+    gap:19.67px;
+}
+.cars_gallery .container .box .car_info_links .links .viewrs{
+column-gap:5.75px;
+}
+.cars_gallery .container .box .car_info_links .links .manuel{
+column-gap:6.67px;
+}
+.cars_gallery .container .box .price p {
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+color: #242731;
+}
+.cars_gallery .container .box .price p span{
+color: #72767C;
+}
+
+/* end cars gallery section */
